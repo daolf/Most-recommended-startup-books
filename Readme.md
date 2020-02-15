@@ -1,5 +1,7 @@
 # The 25 most recommended startup books of all-time.
 
+Details about the methodology available [here](https://www.daolf.com/posts/best-startup-books/)
+
 ### 25. [Delivering Happiness: A Path to Profits, Passion, and Purpose](https://amzn.to/37rgeZH) by Tony Hsieh (7.6% recommended)
     
 ![](https://www.daolf.com/images/book_list/25.jpg#center)
@@ -8,7 +10,7 @@
 
 ### 24. [Shoe Dog: A Memoir by the Creator of Nike](https://amzn.to/2uEd9s8) by Phil Knight (7.6% recommended)
     
-![](https://www.daolf.com/images/images/book_list/24.jpg#center)
+![](https://www.daolf.com/images/book_list/24.jpg#center)
 
 "Knight details the many risks and daunting setbacks that stood between him and his dream - along with his early triumphs. Above all, he recalls the formative relationships with his first partners and employees, a ragtag group of misfits and seekers who became a tight-knit band of brothers. Together, harnessing the transcendent power of a shared mission and a deep belief in the spirit of sport, they built a brand that changed everything." [Amazon.com](https://amzn.to/2uEd9s8)
 
