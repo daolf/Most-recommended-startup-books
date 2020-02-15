@@ -1,74 +1,8 @@
-#"📕 The 25 most recommended startup books of all-time."
-
-There are countless lists on the internet claiming to be **the** list of must-read startup books and it seemed that all those lists always recommended that same books minus two or three odd choices.
-
-I wanted to find out what were the most recommended books about startups, and so I've made this. I've compiled more than **208 lists** and almost **4,000** recommendations found on the internet. To my knowledge, this is the most complete list of its kind on the subject.
-
-If you want to jump right on the results go take a look below at the [full results](#25-most-recommended-startup-books-of-all-time). If you want to learn about the methodology, bear with me.
-
-## Methodology:
-
-I've simply asked Google for a few queries like "Best Startup Books", "Best entrepreneur books" and other variations of it. I have then scrapped all those pages (using ScrapingBee, a web scraping API I'm working on).
-
-I've deduplicated the links and ended up with nearly 300 links. Using the title of the pages I was also able to quickly discards:
-
-- list focussed on one particular editor
-- list focussed on one particular topic (i.e "Best Book for Crypto Entrepreneur")
-- list focussed on free books
-- Quora and Reddit threads
-
-I ended up with 254 HTML files. I went on opening all the files on my browser, open my chrome inspector, found and wrote the CSS selector matching book titles in the article. This took me around 2hours, almost 30 seconds per page. 
-
-This also allowed me to discard even more nonrelevant pages. 
-
-At this moment I had this big JSON file referencing the HTML page previously scrapped, and a CSS selector.
-
-![](/images/book_list/rules.png)
-
-Using Python with Beautiful soup, I've extracted every text inside DOM elements that matched the CSS selector. I ended up with a huge list of books, not usable without some post-processing.
-
-![](/images/book_list/links.png)
-
-To find the most quoted startup books I needed to normalize my results. As a matter of fact, a book like "7 habits of highly effective people" appeared on my results using 3 different titles:
-
-- 7 habits of highly effective people
-- Seven habits of highly effective people
-- 7 habits for highly for effective people
-
-This plus all the different variation like "{title} by {author}" or "{title} - {author}" made this task a bit tricky.
-
-I ended up doing it using this simple custom Python function:
-```python
-def clean_link(link):
-    link = link.encode().decode('ascii', errors='ignore')
-    link = link.replace("'", '')
-    link = link.lower()
-    link = ' '.join([w for w in link.split(' ') if w not in ['the', 'a']])
-    link = link.split('by')[0]
-    link = link.split(':')[0]
-    link = link.split('(')[0]
-    link = ' '.join(link.split())
-    link = link.replace('-', '_')
-    link = ''.join([c for c in link if c.isalpha() or c == '_' or c == ' '])
-    link = link.strip()
-    link = link.replace(' ', '_')
-    link = ''.join([c for c in link if c.isalpha() or c == '_'])
-    return link
-```
- and quite a bit of manual cleaning.
-
-My list now looked like this:
-
-![](https://www.daolf.com/images/book_list/clean_links.png)
-
-From there it was easy to compute the most recommended books. You can find all the data used to process this list on this repo. Now let's look at the list:
-
-## 25 most recommended startup books of all-time
-
+# The 25 most recommended startup books of all-time.
 
 ### 25. [Delivering Happiness: A Path to Profits, Passion, and Purpose](https://amzn.to/37rgeZH) by Tony Hsieh (7.6% recommended)
     
-![](/images/book_list/25.jpg#center)
+![](https://www.daolf.com/images/book_list/25.jpg#center)
 
 "In Delivering Happiness, Zappos CEO Tony Hsieh shares the different lessons he has learned in business and life, from starting a worm farm to running a pizza business, through LinkExchange, Zappos, and more. Fast-paced and down-to-earth, Deliverin Happiness shows how a very different kind of corporate culture is a powerful model for achieving success-and how by concentrating on the happiness of those around you, you can dramatically increase your own." [Amazon.com](https://amzn.to/37rgeZH)
 
