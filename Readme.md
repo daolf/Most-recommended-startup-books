@@ -7,7 +7,7 @@ I wanted to find out what were the most recommended books about startups, and so
 
 *Disclaimer: I spent countless hours on this article so I've decided to put Amazon affiliation links to see if those kinds of detailed articles could be a viable source of revenue, ... or not 🤷‍♂️.*
 
-If you want to jump right on the results go take a look below at the [full results](#the-25-most-recommended-startup-books-of-alltime). If you want to learn about the methodology, bear with me.
+If you want to jump right on the results go take a look below at the [full results](#user-content-the-25-most-recommended-startup-books-of-all-time). If you want to learn about the methodology, bear with me.
 
 ## Methodology:
 
