@@ -1,4 +1,4 @@
-# The 25 most recommended startup books of all-time.
+# 📕 The 25 most recommended startup books of all-time.
 
 There are countless lists on the internet claiming to be **the** list of must-read startup books and it seemed that all those lists always recommended that same books minus two or three odd choices.
 
