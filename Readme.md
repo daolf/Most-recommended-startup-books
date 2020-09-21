@@ -286,4 +286,4 @@ A few additional things I learned making this list:
 
 I hope you enjoyed this article. 
 
-*Originally posted on [daolf.com](https://www.best-books.dev/list/best-startup-books)*
+*Originally posted on [best-books.dev](https://www.best-books.dev/list/best-startup-books)*
